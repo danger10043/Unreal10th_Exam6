@@ -15,7 +15,10 @@ public class Unreal10th_Exam6 : ModuleRules
 			"InputCore",
 			"GameplayAbilities",
 			"GameplayTags",
-			"GameplayTasks"
+			"GameplayTasks",
+			"EnhancedInput",
+			"UMG",
+			"Niagara"
 		});
 
 		PrivateDependencyModuleNames.AddRange(new string[] {  });

@@ -23,23 +23,24 @@ public:
 
 	virtual void PostGameplayEffectExecute(const struct FGameplayEffectModCallbackData& Data) override;
 
+	ATTRIBUTE_ACCESSORS_BASIC(UPlayerAttributeSet, Health);
+	ATTRIBUTE_ACCESSORS_BASIC(UPlayerAttributeSet, MaxHealth);
+	ATTRIBUTE_ACCESSORS_BASIC(UPlayerAttributeSet, Mana);
+	ATTRIBUTE_ACCESSORS_BASIC(UPlayerAttributeSet, MaxMana);
+
 protected:
 	// ------------------------------------------------------------------
 	UPROPERTY(BlueprintReadOnly, Category = "Exam|Stat")
 	FGameplayAttributeData Health;
-	ATTRIBUTE_ACCESSORS_BASIC(UPlayerAttributeSet, Health);
 
 	UPROPERTY(BlueprintReadOnly, Category = "Exam|Stat")
 	FGameplayAttributeData MaxHealth;
-	ATTRIBUTE_ACCESSORS_BASIC(UPlayerAttributeSet, MaxHealth);
 
 	UPROPERTY(BlueprintReadOnly, Category = "Exam|Stat")
 	FGameplayAttributeData Mana;
-	ATTRIBUTE_ACCESSORS_BASIC(UPlayerAttributeSet, Mana);
 
 	UPROPERTY(BlueprintReadOnly, Category = "Exam|Stat")
 	FGameplayAttributeData MaxMana;
-	ATTRIBUTE_ACCESSORS_BASIC(UPlayerAttributeSet, MaxMana);
 	// ------------------------------------------------------------------
 	UPROPERTY(BlueprintReadOnly, Category = "Exam|Stat|Meta Attribute")
 	FGameplayAttributeData Damage;
